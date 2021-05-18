@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Guest List</title>
+        <script src="main.js"></script>
+    </head>
+    <style>
+        body{
+            background-color: cyan;
+            text-align: center;
+            text-emphasis-color:inherit ;
+        }
+
+
+        button{
+            font-size: x-large;
+            background-color:greenyellow ;
+        }
+        input{
+            font-size: xx-large;
+            background-color:chartreuse ;
+            font-family:sans-serif;
+        }
+        label{
+            font-size: x-large;
+            font-family: cursive;
+        }
+        h1{
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            text-decoration: underline;
+            font-size: xx-large;
+        }
+    </style>
+    <body>
+        
+        <h1>Guest List </h1>
+        <label>Adding name</label>
+        <br>
+        <span>
+            <div class="list_div">
+            <input placeholder="Name of guest" id="add1">
+            <button id="list" onclick="add()" >SUBMIT</button>
+            </div>
+              
+            <div id="list1"></div>  
+            </div>     
+        </span>
+        <br>
+        
+        <hr>
+        <br>
+        <div>
+        <label>Confused? Click Show To Show Full List IN Coloumn</label>
+        <button onclick="show()">SHOW</button>
+        </div>
+        <br>
+        <p id="showlist"></p>
+        <hr>
+        <label>Want To Sort Names? Click Sort To Sort Names In Alphabetical Order.</label>
+        <button onclick="sort()">SORT</button>
+        <hr>
+        <br>
+        <p id="sortlist"></p>
+        <span>
+            <button id="s1" onclick="search()">SEARCH</button>
+            <input id="search" > 
+        </span>
+        <label>Too Many Names? Click Search to Search Names.</label>
+        <br>
+        <p id="searchlist"></p>
+    </body>
+</html>
